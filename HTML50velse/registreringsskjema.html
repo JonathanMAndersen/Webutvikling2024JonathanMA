@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskejma</title>
+</head>
+<body>
+    <header>
+        <h1>Registreringsskejma</h1>
+        <nav>
+            <ul>
+                <li><a href=index.html>Hjem</a></li>
+                <li><a href=0velse.html>Validering</a></li>
+                <li><a href=mal.html>Nettsidemal</a></li>
+                <li><a href=kontakt.html>Kontakt oss</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Registreringsskejma</h2>
+            <form method="post">
+                <label for="navn">
+                    Navn:
+                <input type="text" name="navn" placeholder="Skriv navn her" id="navn" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </label>
+                <label>
+                    E-post:
+                    <input type="email" name="email" placeholder="eksempelmail@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </label>
+                <label>
+                    Passord:
+                    <input type="password" name="Passord" placeholder="Passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </label>
+                <label>
+                    Alder:
+                    <input type="number" name="Alder" min="18" max="99" required>
+                </label>
+                <label>
+                    Telefonnummer:
+                    <input type="tel" name="Telefonnummer" pattern="[0-9]{8,12}" required>
+                </label>
+                <label>
+                    Fødselsdato:
+                    <input type="date" name="Fødselsdato" max="2023-12-31" required>
+                </label>
+                <label>
+                    Mann
+                    <input type="radio" name="kjønn" required>
+                </label>
+                <label>
+                    Kvinne
+                    <input type="radio" name="kjønn" required>
+                </label>
+                <label>
+                    Annet
+                    <input type="radio" name="kjønn" required>
+                </label>
+                <label>
+                    Land
+                    <select name="land" required>
+                        <option value="">-</option>
+                        <option value="Norge">Norge</option>
+                        <option value="Sverige">Sverige</option>
+                        <option value="Danmark">Danmark</option>
+                    </select>
+                </label>
+                <label>
+                    Personvern:
+                    <input type="checkbox" required>
+                </label>
+                <input type="submit" value="Registrer">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Kontakt oss på epost: <a href="mailto:epost@gmail.com">Epost</a></p>
+        <h1>&copy;Jonathan 2024</h1>
+    </footer>
+</body>
+</html>
