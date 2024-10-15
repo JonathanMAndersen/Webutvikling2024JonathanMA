@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <!-- Angir tegnsettet som UTF-8 for å støtte de fleste språk og spesialtegn -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Gjør nettstedet responsivt, slik at det tilpasser seg ulike skjermstørrelser, som mobil og nettbrett -->
-    <link href="/ikoner/css/fontawesome.css" rel="stylesheet" />
-    <link href="/ikoner/css/brands.css" rel="stylesheet" />
-    <link href="/ikoner/css/solid.css" rel="stylesheet" />
+    <!-- Gjør nettstedet responsivt, slik at det tilpasser seg ulike skjermstørrelser, som mobil og nettbrett -->  
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
+    <link href="ikoner/css/brands.css" rel="stylesheet" />
+    <link href="ikoner/css/solid.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css"> 
     <!-- Kobler til en ekstern CSS-fil for styling av nettstedet -->
     <title>Zalando Light | Forside</title>
@@ -24,7 +24,7 @@
             <!-- Viser nettstedets logo. "alt" brukes som alternativ tekst hvis bildet ikke lastes inn, eller for skjermlesere -->
             <nav class="flex-space-b">
                 <!-- Definerer navigasjonsmenyen på nettsiden -->
-                <i class="fa-solid fa-burger" onclick="toggleMenu"()></i>
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
                 <ul class="flex-menu" id="menu">
                     <!-- Lager en liste over menylenker -->
                     <li><a href="#">Nyheter</a></li>
@@ -32,7 +32,7 @@
                     <li><a href="#">Nordisk stil</a></li>
                     <!-- En lenke til Nordisk stil -->
                     <li><a href="#">Klær</a></li>
-                    <li><a href="sko.html">Sko</a></li>
+                    <li><a href="#">Sko</a></li>
                     <li><a href="#">Accessories</a></li>
                     <li><a href="#">Streetwear</a></li>
                     <li><a href="#">Sport</a></li>
@@ -71,68 +71,100 @@
                 
                 <!-- Definerer hvert produkt som en artikkel -->
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <!-- Produktbilde med alternativ tekst -->
-                    <a href="#">New balance</a>
-                    <!-- Lenke til produktmerket -->
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <!-- Produktnavn som lenke -->
-                    <p>1445 kr</p>
-                    <!-- Pris på produktet -->
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
 
                 <!-- Gjentar artikkelen for hvert produkt som vises -->
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <a href="#">New balance</a>
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <p>1445 kr</p>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
                 <!-- Flere produktartikler følger, med samme struktur, men med unike lenker og bilder for hvert produkt -->
 
                 <!-- Eksempel på gjentakelse for flere produkter -->
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <a href="#">New balance</a>
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <p>1445 kr</p>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
                 <!-- Artikkelen gjentas for flere produkter, til sammen 9 produkter -->
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <a href="#">New balance</a>
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <p>1445 kr</p>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <a href="#">New balance</a>
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <p>1445 kr</p>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <a href="#">New balance</a>
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <p>1445 kr</p>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <a href="#">New balance</a>
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <p>1445 kr</p>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <a href="#">New balance</a>
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <p>1445 kr</p>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
                 <article class="product-card">
-                    <img src="img/New-balance-ML610-UNISEX.webp" alt="New-balance-ML610-UNISEX">
-                    <a href="#">New balance</a>
-                    <a href="#"><h3>ML610 UNISEX - BLACK</h3></a>
-                    <p>1445 kr</p>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Originals handbal spezial">
+                    </picture>
+                    <a href="#">adidas Originals</a>
+                    <a href="#"><h3>handbal spezial</h3></a>
+                    <p>1299 kr</p>
                 </article>
             </section>
         </main>
@@ -143,14 +175,21 @@
         </footer>
     </div>
     <script>
-        let toggleMenu = ()=>{
-            let x = document.getElementById("menu")
-            if(x.style.display === "flex"){
-                x.style.display = "none"
-            }else{
-                x.style.display = "flex"
+        // Definerer en funksjon kalt toggleMenu, som brukes til å vise eller skjule menyen
+        let toggleMenu = () => {
+            // Henter elementet med id 'menu' og lagrer det i variabelen x
+            let x = document.getElementById("menu");
+    
+            // Sjekker om elementets display-stil er satt til 'flex'
+            if (x.style.display === "flex") {
+                // Hvis display er 'flex', setter vi det til 'none' for å skjule menyen
+                x.style.display = "none";
+            } else {
+                // Hvis display ikke er 'flex', setter vi det til 'flex' for å vise menyen
+                x.style.display = "flex";
             }
         }
     </script>
+    
 </body>
 </html>
