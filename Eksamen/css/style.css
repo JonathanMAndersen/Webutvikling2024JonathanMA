@@ -6,18 +6,72 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{font-size: 2rem;}
+h1{font-size: 2.5rem;}
 h2{font-size: 1.8rem;}
 h3{font-size: 1.6rem;}
 h4{font-size: 1.4rem;}
 p, a{font-size: 1rem;}
 
+.søk {
+   padding: 0;
+}
+
+.søk label{
+    visibility: hidden;
+    position: absolute;
+}
+
+.søk input {
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 1px;
+}
+
+nav ul {
+    padding: 0;
+}
+
 nav ul li {
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.5rem;
     list-style: none;
+}
+
+nav a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#banner {
+    background: rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+    align-items: end; 
+    justify-content: center; 
+    text-align: end; 
+    height: 400px; 
+    padding: 1rem 3rem;
+    min-width: 485px;
+    max-width: 100%;
+    height: auto;
+}
+
+#banner a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    display: inline-block;
+    background-color: white; 
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 main section ul {
@@ -25,23 +79,302 @@ main section ul {
     list-style: none;
 }
 
-#banner {
-    background: rgb(190, 190, 190);
-}
-
 .produkter-knapper {
     display: flex;
-    margin: 1rem;
-    gap: 1rem;
-    
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
-.produkt-liste, .kategori-liste {
+.produkter-knapper button {
+    background-color: transparent;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+
+#produkt-liste, #kategori-liste {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-footer {
+#produkt-liste article img {
+    width: 100%;
+    height: auto;
+    min-width: 480px;
+}
+
+.kategori-kort {
+    display: flex;
+    border: 1px solid black;
+    text-align: center;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+
+.review-kort {
+    border: 1px solid black;
     padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#kontakt ul {
+    list-style: none;
+    padding: 0;
+}
+
+#kontakt ul li {
+    margin-bottom: 1rem;
+}
+
+.snarveier ul{
+    list-style: none;
+    padding: 0;
+}
+
+.snarveier ul li{
+    margin-bottom: 1rem;
+}
+
+.snarveier a{
+    text-decoration: none;
+    color: black;
+}
+
+.følg-oss ul {
+    list-style: none;
+    padding: 0rem;
+}
+
+.følg-oss ul li{
+    margin-bottom: 1rem;
+}
+
+.følg-oss a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    
+}
+
+footer {
+    border-top: 1px solid black;
+}
+
+.breadcrumb {
+    margin: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+}
+
+.produktnavn {
+    font-weight: bolder;
+}
+
+.produkt-side {
+    padding: 2rem;
+}
+
+.hovedbilde {
+    margin-bottom: 2rem;
+}
+
+.hovedbilde img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produkt-bilder {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    display: block;
+}
+
+.produkt-bilder img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.produkt-info a {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.lignende-produkter {
+    margin-top: 2rem;
+}
+
+.produkt-kort {
+    padding: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    width: 100%;
+    
+}
+
+.produkt-kort img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produkt-navn {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.opplysninger {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.opplysninger input {
+    width: 100%; 
+    padding: 1rem; 
+    border: 1px solid #979797; 
+    font-size: 1rem; 
+}
+
+.opplysninger button {
+    background-color: #333; 
+    color: white; 
+    border: none; 
+    padding: 1rem; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    text-align: center; 
+    width: 100px;
+}
+
+.levering {
+    display: flex;
+    flex-direction: column;
+}
+
+.levering label {
+    margin-bottom: 1rem; 
+    font-size: 1rem; 
+    font-weight: bolder;
+}
+
+.betaling {
+    display: flex;
+    flex-direction: column;
+}
+
+.betaling label {
+    font-weight: bolder;
+}
+
+.betaling input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #979797;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.betaling button {
+    background-color: #333; 
+    color: white; 
+    border: none; 
+    padding: 1rem; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    width: 120px;
+}
+
+.betaling p {
+    font-weight: bold;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 800px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        max-width: 1200px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .søk {
+        display: flex;
+        align-items: center;
+    }
+
+    .meny {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        
+    }
+
+    .ikoner {
+        display: flex;
+        align-items: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: 2fr;
+        grid-template-columns: repeat(3, auto);
+        gap: 2rem;
+    }
+
+    footer h2 {
+        display: flex;
+        flex-wrap: wrap;
+        grid-row: 1 / 2;
+    }
+
+    #kontakt, .snarveier, .følg-oss {
+        grid-row: 2 / 3;
+    }
+
+    #produkt-liste {
+        display: flex;
+    }
+
+    .produkter-knapper {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin: auto;
+    }
+
+    #produkt-liste article img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
 }

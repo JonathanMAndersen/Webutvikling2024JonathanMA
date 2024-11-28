@@ -12,20 +12,22 @@
 <body>
     <header>
         <nav>
-            <form>
+            <form class="søk">
                 <label for="search">Søk</label>
                 <input type="search" placeholder="Søk etter produkter..." id="search">
                 <input type="submit" value="søk">
             </form>
-            <ul>
+            <ul class="meny">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#populære-produkter">Produkter</a></li>
-                <li><a href="index.html">LOGO</a></li>
-                <li><a href="#populære-kategorier">Kategorier</a></li>
-                <li><a href="#footer-contact">Kontakt oss</a></li>
-                <li><i class="fa-regular fa-user"></i></li>
-                <li><i class="fa-regular fa-heart"></i></li>
-                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><a href="#produkt-liste">Produkter</a></li>
+                <li><a href="index.html" class="logo">LOGO</a></li>
+                <li><a href="#kategori-liste">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+            </ul>
+            <ul class="ikoner">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -33,9 +35,9 @@
         <section id="banner">
             <h1>Sed ut perspiciatis unde omnis iste natus error</h1>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est</p>
-            <a href="#populære-produkter">Se produkter</a>
+            <a href="#produkt-liste">Se produkter</a>
         </section>
-        <section id="populære-produkter">
+        <section id="produkt-liste">
             <h2>Våre mest populære produkter</h2>
             <p>Oppdag det beste av det beste.</p>
             <ul class="produkter-knapper">
@@ -43,69 +45,99 @@
                 <li><button>Special Price</button></li>
                 <li><button>Best Sellers</button></li>
             </ul>
-            </section>
-            <section class="produkt-liste">
                 <article>
-                    <img src="https://picsum.photos/200" alt="Produkt 1">
+                    <a href="product.html"><img src="https://picsum.photos/1000" alt="Produkt 1"></a>
                     <h3>Produkt 1</h3>
-                    <p>Pris: 499,-</p>
+                    <p>Kr 499</p>
                 </article>
                 <article>
-                    <img src="https://picsum.photos/200" alt="Produkt 2">
+                    <a href="product.html"><img src="https://picsum.photos/1000" alt="Produkt 2"></a>
                     <h3>Produkt 2</h3>
-                    <p>Pris: 699,-</p>
+                    <p>Kr 699</p>
                 </article>
-                <!-- Gjenta flere produktkort -->
+                <article>
+                    <a href="product.html"><img src="https://picsum.photos/1000" alt="Produkt 3"></a>
+                    <h3>Produkt 3</h3>
+                    <p>Kr 699</p>
+                </article>
+                <article>
+                    <a href="product.html"><img src="https://picsum.photos/1000" alt="Produkt 4"></a>
+                    <h3>Produkt 4</h3>
+                    <p>Kr 699</p>
+                </article>
+                <article>
+                    <a href="product.html"><img src="https://picsum.photos/1000" alt="Produkt 5"></a>
+                    <h3>Produkt 5</h3>
+                    <p>Kr 699</p>
+                </article>
+                <article>
+                    <a href="product.html"><img src="https://picsum.photos/1000" alt="Produkt 6"></a>
+                    <h3>Produkt 6</h3>
+                    <p>Kr 699</p>
+                </article>
             </section>
-        <section id="populære-kategorier">
+        <section id="kategori-liste">
             <h2>Våre mest populære kategorier</h2>
             <p>Lorem ipsum dolor sit amet.</p>
-            <section class="kategori-liste">
-                <article class="category-card">Kategori 1</article>
-                <article class="category-card">Kategori 2</article>
-                <article class="category-card">Kategori 3</article>
+                <article class="kategori-kort">Kategori 1</article>
+                <article class="kategori-kort">Kategori 2</article>
+                <article class="kategori-kort">Kategori 3</article>
+                <article class="kategori-kort">Kategori 4</article>
+                <article class="kategori-kort">Kategori 5</article>
             </section>
-        </section>
         <section id="reviews">
             <h2>Anmeldelser</h2>
-            <article class="review-card">
+            <article class="review-kort">
                 <img src="https://picsum.photos/150" alt="Brukeranmeldelse">
                 <h3>Anmeldelse 1</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </article>
-            <article class="review-card">
+            <article class="review-kort">
                 <img src="https://picsum.photos/150" alt="Brukeranmeldelse">
                 <h3>Anmeldelse 2</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </article>
-            <!-- Gjenta flere anmeldelseskort -->
+            <article class="review-kort">
+                <img src="https://picsum.photos/150" alt="Brukeranmeldelse">
+                <h3>Anmeldelse 3</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </article>
+            <article class="review-kort">
+                <img src="https://picsum.photos/150" alt="Brukeranmeldelse">
+                <h3>Anmeldelse 4</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </article>
         </section>
     </main>
     <footer>
         <section>
             <h2>LOGO</h2>
-            <p>Din pålitelige nettbutikk.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
         </section>
-        <section>
+        <section id="kontakt">
             <h3>Kontakt</h3>
-            <p>Adresse: Eksempelgata 1</p>
-            <p>E-post: kontakt@nettbutikk.no</p>
-        </section>
-        <section id="Snarveier">
-            <h3>Snarveier</h3>
             <ul>
-                <li><a href="#banner">Hjem</a></li>
-                <li><a href="#populære-produkter">Produkter</a></li>
-                <li><a href="#populære-kategorier">Kategorier</a></li>
+                <li><i class="fa-solid fa-location-dot"></i>Adresse: Storgata 3, 1767 HALDEN</li> 
+                <li><i class="fa-solid fa-phone"></i>Telefon: 49 24 00 90</li>
+                <li><i class="fa-solid fa-envelope"></i>E-post: halden@hiof.no</li>
+                <li><i class="fa-solid fa-clock"></i>Åpningstider: 08:00 - 15:00</li>
             </ul>
         </section>
-        <section id="Følg-oss">
+        <section class="snarveier">
+            <h3>Snarveier</h3>
+            <ul>
+                <li><a href="#produkt-liste">Produkter</a></li>
+                <li><a href="#kategori-liste">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+            </ul>
+        </section>
+        <section class="følg-oss">
             <h3>Følg oss</h3>
             <ul>
-                <li><a href="https://instagram.com">Instagram</a></li>
-                <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://linkedin.com">LinkedIn</a></li>
-                <li><a href="https://pinterest.com">Pinterest</a></li>
+                <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://pinterest.com"><i class="fa-brands fa-pinterest"></i></a></li>
             </ul>
         </section>
     </footer>
