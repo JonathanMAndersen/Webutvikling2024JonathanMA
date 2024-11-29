@@ -314,7 +314,8 @@ footer {
     margin-bottom: 5rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
+    
     header nav {
         display: flex;
         justify-content: space-between;
@@ -360,21 +361,3 @@ footer {
     #kontakt, .snarveier, .følg-oss {
         grid-row: 2 / 3;
     }
-
-    #produkt-liste {
-        display: flex;
-    }
-
-    .produkter-knapper {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        margin: auto;
-    }
-
-    #produkt-liste article img {
-        width: 100%;
-        height: auto;
-        max-width: 350px;
-    }
-}
